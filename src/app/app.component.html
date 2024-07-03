@@ -1,2 +1,6 @@
 <h1>¡Bienvenido a mi aplicación en Angular!</h1>
-<app-saludo [mostrarSaludo]="true"></app-saludo>
+<app-saludo [mostrarSaludo]="true" #saludoComponent (cambioMostrarSaludo)="cambiarMostrarSaludo($event)"></app-saludo>
+
+<button (click)="saludoComponent.cambiarfuente('rojo')">Cambiar a Rojo</button>
+<button (click)="saludoComponent.cambiarfuente('verde')">Cambiar a Verde</button>
+<button (click)="saludoComponent.ocultarSaludo()">Ocultar Saludo</button>
