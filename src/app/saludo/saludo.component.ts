@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-saludo',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./saludo.component.css']
 })
 export class SaludoComponent {
+  @Input() mostrarSaludo: boolean = false;
   personNombre: string = 'Sergio Garcia';
   constructor() { }
 }
