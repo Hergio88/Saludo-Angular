@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./saludo.component.css']
 })
 export class SaludoComponent {
-
+  personNombre: string = 'Sergio Garcia';
+  constructor() { }
 }
